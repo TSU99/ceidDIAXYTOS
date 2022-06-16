@@ -25,7 +25,7 @@
       document
         .querySelector(".say-hi-button")
         .addEventListener("click", function () {
-          alert("Hi there!");
+          alert("Hi there!11!!");
         });
 
 
@@ -105,7 +105,7 @@
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3; emitevents:true;'
               gui-env dynamic-elements>
       <!-- scene should have a marker to detect, in this case, a simple HIRO marker -->
-      <a-marker id ="themarker" type='barcode' value='5' markerhandler>
+      <a-marker id ="themarker" type='pattern' value='5' url='https://raw.githack.com/TSU99/tsounis/main/climate%20control/pattern-climate_control.patt' markerhandler>
         <!-- over the marker, we display some GUI components, they need to be inside a container -->
             <a-gui-flex-container
               id = "thepanel"
