@@ -152,6 +152,54 @@
     		</a-gui-flex-container>
       </a-marker>
 
+      
+      
+      <a-marker id ="theLIGHT" type='pattern' value='5' url='https://raw.githack.com/TSU99/tsounis/main/lightswitch/pattern-lightswitch.patt' markerhandler>
+        <!-- over the marker, we display some GUI components, they need to be inside a container -->
+            <a-gui-flex-container
+              id = "thepanel"
+        			flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1"
+        			opacity="0.6" width="1.75" height="3" panel-color="#fff" panel-rounded="0.1"
+        			position="0 0.5 0" rotation="-90 0 0"
+        		>
+              <!-- html for each GUI component -->
+              <a-gui-radio
+                width="1.25" height="0.25"
+                onclick="console.log('clickety click');"
+                value="radio label"
+                font-size="0.15"
+                margin="0 0 0.05 0"
+              >
+              </a-gui-radio>
+
+              <a-gui-label
+        				width="1.25" height="0.25"
+        				value="test label"
+        				font-size="0.15"
+        				line-height="0.4"
+        				letter-spacing="0"
+        				margin="0 0 0.05 0"
+        			>
+              </a-gui-label>
+
+              <a-gui-toggle
+                width="1.25" height="0.25"
+                onclick="console.log('clickety click');"
+                value="toggle label"
+                font-size="0.15"
+                margin="0 0 0.05 0"
+              >
+              </a-gui-toggle>
+
+              <a-gui-slider
+                width="1.25" height="0.25"
+                onclick="console.log('clickety click');"
+                percent="0.20"
+                margin="0 0 0.05 0"
+              >
+              </a-gui-slider>
+    		</a-gui-flex-container>
+      </a-marker>
       <!-- if we didn't do the dynamic adding of this entity, this is where it would be declared
       <a-entity id="mouseCursor"> cursor="rayOrigin: mouse" raycaster="objects: [gui-interactable]"></a-entity>
       -->
